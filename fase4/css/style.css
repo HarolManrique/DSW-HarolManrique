@@ -23,8 +23,15 @@ nav{
 footer{
     background-color: black;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 0em;
+  
+    clear:left;
+   /* position:fixed;*/
+   left:0px;
+   bottom:0px;
+   height:40px;
+   width:100%;
 }
 div{
     display: grid;

@@ -2,63 +2,99 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device width, initial-scale=1.0">
-    <title>Proyecto de Sitio WEB 2021-2</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="x-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>Aprendizaje 2</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Proyecto de Sitio WEB 2021-2</h1>
-    </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Temas</a>
-                <ul class="submenu">
-                    <li><a href="tema1.html">Tema 1</a></li>
-                    <li><a href="tema2.html">Tema 2</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Recursos Digitales</a>
-                <ul class="submenu">
-                    <li><a href="recurso1.html">Recurso 1</a></li>
-                    <li><a href="recurso2.html">Recurso 2</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Aprendizaje</a>
-                <ul class="submenu">
-                    <li><a href="ventana1.html">Ventana 1</a></li>
-                    <li><a href="ventana2.html">Ventana 2</a></li>
-                </ul>
-            </li>
-            <li><a href="autor.html">Autor</a></li>
-        </ul>
-    </nav>
-    <div>
-        <section>
-            <h1>Aprendizaje 2</h1>
-            <p>proximamente aprendizaje 2
-            </p>
+  <header>
+    <h1>HTML 5 Y CSS: Listas y Enlaces</h1>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+          <li class="nav-item">
+            <a class="nav-link active  text-white" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Temas</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="tema1.html">Etiquetas Semanticas</a></li>
+              <li><a class="dropdown-item" href="tema2.html">Listas y Enlaces</a></li>
+              <li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown2" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Recurso Digitales
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="recurso1.html">Recurso 1</a></li>
+              <li><a class="dropdown-item" href="recurso2.html">Recurso 2</a></li>
+            </ul>
+          </li>
 
-            <article>
-                contenido
-            </article>
-        </section>
-        <aside>
-            <iframe
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                width="340" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                allowfullscreen="true"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </aside>
-    </div>
-    <footer>
-        <p>&copy; Todos los derechos reservados - 14-07-2021 / Harol Herney Manrique Ariza / Skype:
-            hhmanrique08@outlook.com
-        </p>
-    </footer>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown2" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Aprendizaje
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="ventana1.html">Aprendizaje 1</a></li>
+              <li><a class="dropdown-item" href="ventana2.html">Aprendizaje 2</a></li>
+            </ul>
+          </li>
+
+          <div class="collapse navbar-collapse text-white" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="autor.html">Acerca de</a>
+              </li>
+
+
+          </div>
+      </div>
+  </nav>
+  <main class="container">
+    <section class="row">
+        <article class="col-md-8">
+          <h1>Aprendizaje 2</h1>
+          <p><h3>Conocimiento en Listas y Enlaces HTML 5</h3></p>
+          <p>
+            El presente cuestionario pretende evaluar los conocimientos adquiridos con el material de estudio del tema
+            2: Listas y Enlaces en HTML 5.
+          </p>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtgpSK2JWXegnbojOjnZAxXjoTgMxv409ezeGWQI4Tm4qS4g/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </article>
+      <aside class="col-md-4">
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          width="340" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </aside>
+    </section>
+  </main>
 </body>
+<footer>
+  <p>&copy; Todos los derechos reservados - 14-07-2021 / Harol Herney Manrique Ariza / Skype:
+    hhmanrique08@outlook.com
+  </p>
+</footer>
+
 </html>
